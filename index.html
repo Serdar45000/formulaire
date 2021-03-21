@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
-  </head>
-  <body>
 
-<style>
+    <style>
 body {
     width:800px;
     margin: 5em auto;
@@ -16,7 +14,7 @@ body {
 
 form {
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
@@ -28,7 +26,7 @@ form div + div {
 
 label {
   display: inline-block;
-  width: 90px;
+  width: 110px;
   text-align: right;
 }
 
@@ -45,7 +43,7 @@ input:focus, textarea:focus {
 
 textarea {
   vertical-align: top;
-  height: 5em;
+  height: 4em;
 }
 
 .button {
@@ -53,46 +51,55 @@ textarea {
 }
 
 button {
-
   margin-left: .5em;
 }
 </style>
+</head>
 
-    <form  action="/formcollect.php"  method="post">
+<body>
+<form  action="/formcollect.php"  method="post">
 
-      <div>
-        <label  for="nom">Nom :</label>
-        <input  type="text"  id="name"  name="firstname">
-      </div>
+<div>
+  <label  for="firstname">First name :</label>
+  <input  type="text"  id="name"  name="firstname">
+</div>
 
-      <div>
-        <label  for="nom">Nom :</label>
-        <input  type="text"  id="lastname"  name="lastname">
-      </div>
+<div>
+  <label  for="lastname">Last name :</label>
+  <input  type="text"  id="lastname"  name="lastname">
+</div>
 
-      <div>
-        <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="email"  name="useremail">
-      </div>
 
-      <div>
-      <label for="service">Service :</label>
-                  <select name="service" id="sendservice">
-                          <option value="" selected="selected">Choose your service :</option> 
-                          <option value="costumer">Costumer</option> 
-                          <option value="delivary">Delivary</option> 
-                          <option value="webmaster">Webmaster</option> 
-                  </select>
-      </div>
+<div>
+  <label  for="phone">Phone :</label>
+  <input  type="text"  id="phone"  name="userphone">
+</div>
 
-      <div>
-        <label  for="message">Message :</label>
-        <textarea  id="message"  name="usermessage"></textarea>
-      </div>
+<div>
+  <label  for="email">Email :</label>
+  <input  type="email"  id="email"  name="useremail">
+</div>
 
-      <div  class="button">
-        <button  type="submit">Send your message</button>
-      </div>
-    </form>
-  </body>
+
+<div>  
+<label for="service">Service :</label>
+            <select name="service" id="sendservice">
+                    <option value="" selected="selected">Choose your service :</option> 
+                    <option value="costumer">Costumer</option> 
+                    <option value="delivary">Delivary</option> 
+                    <option value="webmaster">Webmaster</option> 
+            </select>
+</div>
+
+<div>
+  <label  for="message">Message :</label>
+  <textarea  id="message"  name="usermessage"></textarea>
+</div>
+
+<div  class="button">
+  <button  type="submit">Send your message</button>
+</div>
+
+</form>
+</body>
 </html>
