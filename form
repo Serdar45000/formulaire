@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thank you</title>
+
+    <style>
+    body {
+        width:400px;
+        margin: 5em auto;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+
+</style>
 </head>
 
 <body>
-<style>
-body {
-    width:400px;
-    margin: 5em auto;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-}
 
-</style>
                 <?php
-                            echo htmlspecialchars($_POST['firstname']) . '<br/>'; 
-                            echo htmlspecialchars($_POST['lastname']) . '<br/>'; 
+                            echo 'Thank you ';
+                            echo htmlspecialchars($_POST['firstname']) . ' '; 
+                            echo htmlspecialchars($_POST['lastname']) . '<br/> Your message : '; 
+                            echo htmlspecialchars($_POST['usermessage'] );
+                            echo ' will be transfered to the service ';
+                            echo htmlspecialchars($_POST['service']). ' '; 
+                            echo ' and will contact you on <br/> your phone : ';
+                            echo htmlspecialchars($_POST['userphone']). ' or <br/> your email : '; 
                             echo htmlspecialchars($_POST['useremail']). '<br/>'; 
-                            echo htmlspecialchars($_POST['service']). '<br/>'; 
                 ?> 
-                            Your message : <br/>
-                           <?php echo htmlspecialchars($_POST['usermessage'] ); ?>
 
 
 
