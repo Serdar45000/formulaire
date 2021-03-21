@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<style>
+body {
+    width:400px;
+    margin: 5em auto;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+</style>
+                <?php
+                            echo htmlspecialchars($_POST['firstname']) . '<br/>'; 
+                            echo htmlspecialchars($_POST['lastname']) . '<br/>'; 
+                            echo htmlspecialchars($_POST['useremail']). '<br/>'; 
+                            echo htmlspecialchars($_POST['service']). '<br/>'; 
+                ?> 
+                            Your message : <br/>
+                           <?php echo htmlspecialchars($_POST['usermessage'] ); ?>
+
+
+
+</body>
+</html>
